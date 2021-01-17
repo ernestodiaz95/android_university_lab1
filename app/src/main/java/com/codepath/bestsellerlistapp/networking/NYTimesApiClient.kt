@@ -24,7 +24,7 @@ class NYTimesApiClient {
 
     companion object {
         // TODO: Replace the below API key with your own generated key
-        private const val API_KEY = "<YOUR-API-KEY-GOES-HERE>"
+        private const val API_KEY = "QAGeW32Jf9WO4ahqLF1Pj1aG2zBsAjnR"
     }
 
     fun getBestSellersList(booksListResponse: CallbackResponse<List<BestSellerBook>>) {
