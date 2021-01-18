@@ -16,4 +16,7 @@ class BestSellerBook {
 
     @SerializedName("book_image")
     var bookImageUrl: String? = null
+
+    @SerializedName("description")
+    var description: String? = null
 }
