@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.widget.ContentLoadingProgressBar
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.bestsellerlistapp.models.BestSellerBook
@@ -36,7 +37,7 @@ class BestSellerBooksFragment : Fragment(), OnListFragmentInteractionListener {
 
         // Set the adapter
         val context = view.context
-        recyclerView.layoutManager = LinearLayoutManager(context)
+        recyclerView.layoutManager = GridLayoutManager(context, 2)
         updateAdapter(progressBar, recyclerView)
         return view
     }
